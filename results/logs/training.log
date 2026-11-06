@@ -1,0 +1,263 @@
+
+==================== V5.1 Run: 2026-07-20 19:46:33 ====================
+[V5.1] seed=42  EPOCHS=30  BATCH=16  LR=0.0003
+[V5.1] INPUT_SIZE=384  DROPOUT=0.3  LABEL_SMOOTHING=0.08
+[V5.1] MIXUP_ALPHA=0.15  MIXUP_PROB=0.4  SAM=True
+[数据准备] 加载数据: /workspace/Master-Folder
+[数据准备] 类别: ['Angry', 'Sad', 'happy'] | train: 2100 | val: 450 | test: 450 | 分辨率: 384
+
+>>> V5.0 多模型对比模式 (3 Models) <<<
+[模型] 初始化: efficientnet_b3 (Dropout=0.3)
+
+[模型] efficientnet_b3: 10.70M 参数
+
+=================================================================
+  V5.1 训练: efficientnet_b3 | 设备: cuda
+  输入: 384×384 | LabelSmooth=0.08
+  优化器: AdamW+SAM | OneCycleLR | Dropout=0.3
+  EMA: 0.999 | MixUp α=0.15 p=0.4
+  SAM ρ=0.05
+=================================================================
+
+==================== V5.1 Run: 2026-07-20 19:54:32 ====================
+[V5.1] seed=42  EPOCHS=30  BATCH=16  LR=0.0003
+[V5.1] INPUT_SIZE=384  DROPOUT=0.3  LABEL_SMOOTHING=0.08
+[V5.1] MIXUP_ALPHA=0.15  MIXUP_PROB=0.4  SAM=True
+[数据准备] 加载数据: /workspace/Master-Folder
+[数据准备] 类别: ['Angry', 'Sad', 'happy'] | train: 2100 | val: 450 | test: 450 | 分辨率: 384
+
+>>> V5.0 多模型对比模式 (3 Models) <<<
+[模型] 初始化: efficientnet_b3 (Dropout=0.3)
+
+[模型] efficientnet_b3: 10.70M 参数
+
+=================================================================
+  V5.1 训练: efficientnet_b3 | 设备: cuda
+  输入: 384×384 | LabelSmooth=0.08
+  优化器: AdamW+SAM | OneCycleLR | Dropout=0.3
+  EMA: 0.999 | MixUp α=0.15 p=0.4
+  SAM ρ=0.05
+=================================================================
+Epoch [01/30] LR: 0.000030 | Loss: 1.0902 | Train Acc: 32.90% | Val Acc: 69.56% | Test Acc: 40.44% ★SAVED
+Epoch [02/30] LR: 0.000060 | Loss: 0.8260 | Train Acc: 47.76% | Val Acc: 85.56% | Test Acc: 43.33% ★SAVED
+Epoch [03/30] LR: 0.000090 | Loss: 0.6197 | Train Acc: 49.57% | Val Acc: 90.44% | Test Acc: 56.89% ★SAVED
+Epoch [04/30] LR: 0.000036 | Loss: 0.5392 | Train Acc: 55.00% | Val Acc: 91.33% | Test Acc: 67.33% ★SAVED
+Epoch [05/30] LR: 0.000099 | Loss: 0.5415 | Train Acc: 52.24% | Val Acc: 92.44% | Test Acc: 74.44% ★SAVED
+Epoch [06/30] LR: 0.000181 | Loss: nan | Train Acc: 60.29% | Val Acc: 33.33% | Test Acc: 33.33%
+Epoch [07/30] LR: 0.000255 | Loss: 0.4802 | Train Acc: 60.48% | Val Acc: 33.33% | Test Acc: 33.33%
+Epoch [08/30] LR: 0.000296 | Loss: 0.4609 | Train Acc: 58.24% | Val Acc: 33.33% | Test Acc: 33.33%
+Epoch [09/30] LR: 0.000299 | Loss: 0.4342 | Train Acc: 56.38% | Val Acc: 33.33% | Test Acc: 33.33%
+Epoch [10/30] LR: 0.000296 | Loss: 0.3903 | Train Acc: 62.52% | Val Acc: 33.33% | Test Acc: 33.33%
+Epoch [11/30] LR: 0.000289 | Loss: 0.3731 | Train Acc: 61.86% | Val Acc: 33.33% | Test Acc: 33.33%
+Epoch [12/30] LR: 0.000280 | Loss: 0.3854 | Train Acc: 54.76% | Val Acc: 33.33% | Test Acc: 33.33%
+
+==================== V5.1 Run: 2026-07-20 20:06:26 ====================
+[V5.1] seed=42  EPOCHS=30  BATCH=16  LR=0.0003
+[V5.1] INPUT_SIZE=384  DROPOUT=0.3  LABEL_SMOOTHING=0.08
+[V5.1] MIXUP_ALPHA=0.15  MIXUP_PROB=0.4  SAM=False
+[数据准备] 加载数据: /workspace/Master-Folder
+[数据准备] 类别: ['Angry', 'Sad', 'happy'] | train: 2100 | val: 450 | test: 450 | 分辨率: 384
+
+>>> V5.0 多模型对比模式 (3 Models) <<<
+[模型] 初始化: efficientnet_b3 (Dropout=0.3)
+
+[模型] efficientnet_b3: 10.70M 参数
+
+=================================================================
+  V5.1 训练: efficientnet_b3 | 设备: cuda
+  输入: 384×384 | LabelSmooth=0.08
+  优化器: AdamW | CosineAnnealingLR | Dropout=0.3
+  EMA: 0.999 | MixUp α=0.15 p=0.4
+=================================================================
+Epoch [01/30] LR: 0.000100 | Loss: 0.8218 | Train Acc: 41.05% | Val Acc: 85.56% | Test Acc: 35.56% ★SAVED
+Epoch [02/30] LR: 0.000200 | Loss: 0.5506 | Train Acc: 53.33% | Val Acc: 90.67% | Test Acc: 51.78% ★SAVED
+Epoch [03/30] LR: 0.000300 | Loss: 0.4826 | Train Acc: 52.19% | Val Acc: 92.67% | Test Acc: 46.00% ★SAVED
+Epoch [04/30] LR: 0.000299 | Loss: 0.4285 | Train Acc: 56.95% | Val Acc: 90.44% | Test Acc: 74.22%
+Epoch [05/30] LR: 0.000296 | Loss: 0.4193 | Train Acc: 54.90% | Val Acc: 92.67% | Test Acc: 75.33%
+Epoch [06/30] LR: 0.000291 | Loss: 0.3471 | Train Acc: 62.62% | Val Acc: 94.22% | Test Acc: 73.11% ★SAVED
+Epoch [07/30] LR: 0.000284 | Loss: 0.3809 | Train Acc: 63.00% | Val Acc: 94.00% | Test Acc: 83.78%
+Epoch [08/30] LR: 0.000275 | Loss: 0.3478 | Train Acc: 60.67% | Val Acc: 93.78% | Test Acc: 85.78%
+Epoch [09/30] LR: 0.000265 | Loss: 0.3430 | Train Acc: 57.71% | Val Acc: 94.22% | Test Acc: 90.00%
+Epoch [10/30] LR: 0.000253 | Loss: 0.3191 | Train Acc: 63.19% | Val Acc: 92.44% | Test Acc: 91.56%
+Epoch [11/30] LR: 0.000240 | Loss: 0.3138 | Train Acc: 62.76% | Val Acc: 93.56% | Test Acc: 92.00%
+Epoch [12/30] LR: 0.000225 | Loss: 0.3365 | Train Acc: 55.38% | Val Acc: 93.56% | Test Acc: 91.78%
+Epoch [13/30] LR: 0.000210 | Loss: 0.3561 | Train Acc: 53.76% | Val Acc: 95.78% | Test Acc: 93.33% ★SAVED
+Epoch [14/30] LR: 0.000193 | Loss: 0.3340 | Train Acc: 59.81% | Val Acc: 93.33% | Test Acc: 94.89%
+Epoch [15/30] LR: 0.000176 | Loss: 0.3166 | Train Acc: 59.38% | Val Acc: 94.67% | Test Acc: 94.89%
+Epoch [16/30] LR: 0.000159 | Loss: 0.3212 | Train Acc: 54.71% | Val Acc: 95.33% | Test Acc: 93.78%
+Epoch [17/30] LR: 0.000142 | Loss: 0.2949 | Train Acc: 57.52% | Val Acc: 94.89% | Test Acc: 94.67%
+Epoch [18/30] LR: 0.000125 | Loss: 0.3055 | Train Acc: 60.62% | Val Acc: 94.89% | Test Acc: 94.89%
+Epoch [19/30] LR: 0.000108 | Loss: 0.3095 | Train Acc: 65.19% | Val Acc: 95.11% | Test Acc: 94.44%
+Epoch [20/30] LR: 0.000091 | Loss: 0.3327 | Train Acc: 55.14% | Val Acc: 94.44% | Test Acc: 94.89%
+Epoch [21/30] LR: 0.000076 | Loss: 0.2873 | Train Acc: 58.29% | Val Acc: 94.00% | Test Acc: 94.44%
+Epoch [22/30] LR: 0.000061 | Loss: 0.2942 | Train Acc: 57.67% | Val Acc: 94.00% | Test Acc: 95.33%
+Epoch [23/30] LR: 0.000048 | Loss: 0.3238 | Train Acc: 54.62% | Val Acc: 94.67% | Test Acc: 95.11%
+Epoch [24/30] LR: 0.000036 | Loss: 0.3129 | Train Acc: 58.57% | Val Acc: 94.22% | Test Acc: 95.33%
+Epoch [25/30] LR: 0.000026 | Loss: 0.2949 | Train Acc: 67.57% | Val Acc: 95.11% | Test Acc: 95.11%
+Epoch [26/30] LR: 0.000017 | Loss: 0.3132 | Train Acc: 54.81% | Val Acc: 95.33% | Test Acc: 94.67%
+Epoch [27/30] LR: 0.000010 | Loss: 0.3004 | Train Acc: 63.19% | Val Acc: 95.33% | Test Acc: 95.33%
+Epoch [28/30] LR: 0.000005 | Loss: 0.3072 | Train Acc: 57.10% | Val Acc: 94.44% | Test Acc: 95.56%
+Epoch [29/30] LR: 0.000002 | Loss: 0.2911 | Train Acc: 55.52% | Val Acc: 95.33% | Test Acc: 94.89%
+Epoch [30/30] LR: 0.000001 | Loss: 0.2936 | Train Acc: 63.19% | Val Acc: 94.22% | Test Acc: 95.11%
+
+=================================================================
+  完成: efficientnet_b3
+  最佳 Val Acc: 95.78% @ Epoch 13
+  对应 Test Acc: 93.33%
+  最终 Test Acc (EMA): 95.11%
+  耗时: 755.5s (12.6min)
+=================================================================
+
+[混淆矩阵] 已保存: /workspace/confusion_efficientnet_b3.png
+
+[分类报告] efficientnet_b3
+              precision    recall  f1-score   support
+
+       Angry     0.9514    0.9133    0.9320       150
+         Sad     0.9800    0.9800    0.9800       150
+       happy     0.9231    0.9600    0.9412       150
+
+    accuracy                         0.9511       450
+   macro avg     0.9515    0.9511    0.9510       450
+weighted avg     0.9515    0.9511    0.9510       450
+
+[分析] Angry→happy: 10 | happy→Angry: 6 | 混淆合计: 16
+[模型] 初始化: resnet50 (Dropout=0.3)
+
+[模型] resnet50: 23.51M 参数
+
+=================================================================
+  V5.1 训练: resnet50 | 设备: cuda
+  输入: 384×384 | LabelSmooth=0.08
+  优化器: AdamW | CosineAnnealingLR | Dropout=0.3
+  EMA: 0.999 | MixUp α=0.15 p=0.4
+=================================================================
+Epoch [01/30] LR: 0.000100 | Loss: 0.7870 | Train Acc: 37.14% | Val Acc: 88.89% | Test Acc: 28.44% ★SAVED
+Epoch [02/30] LR: 0.000200 | Loss: 0.5741 | Train Acc: 55.62% | Val Acc: 89.11% | Test Acc: 34.44% ★SAVED
+Epoch [03/30] LR: 0.000300 | Loss: 0.5532 | Train Acc: 46.90% | Val Acc: 89.11% | Test Acc: 42.67%
+Epoch [04/30] LR: 0.000299 | Loss: 0.5560 | Train Acc: 45.00% | Val Acc: 90.00% | Test Acc: 52.67% ★SAVED
+Epoch [05/30] LR: 0.000296 | Loss: 0.4968 | Train Acc: 53.57% | Val Acc: 90.22% | Test Acc: 44.89% ★SAVED
+Epoch [06/30] LR: 0.000291 | Loss: 0.4947 | Train Acc: 56.33% | Val Acc: 88.00% | Test Acc: 75.33%
+Epoch [07/30] LR: 0.000284 | Loss: 0.4811 | Train Acc: 53.14% | Val Acc: 92.22% | Test Acc: 76.00% ★SAVED
+Epoch [08/30] LR: 0.000275 | Loss: 0.4818 | Train Acc: 52.90% | Val Acc: 86.89% | Test Acc: 84.44%
+Epoch [09/30] LR: 0.000265 | Loss: 0.4327 | Train Acc: 54.19% | Val Acc: 91.11% | Test Acc: 86.89%
+Epoch [10/30] LR: 0.000253 | Loss: 0.4488 | Train Acc: 50.00% | Val Acc: 92.67% | Test Acc: 83.11% ★SAVED
+Epoch [11/30] LR: 0.000240 | Loss: 0.3983 | Train Acc: 57.71% | Val Acc: 92.00% | Test Acc: 88.67%
+Epoch [12/30] LR: 0.000225 | Loss: 0.3901 | Train Acc: 59.19% | Val Acc: 92.67% | Test Acc: 89.11%
+Epoch [13/30] LR: 0.000210 | Loss: 0.3927 | Train Acc: 54.62% | Val Acc: 92.67% | Test Acc: 87.78%
+Epoch [14/30] LR: 0.000193 | Loss: 0.3703 | Train Acc: 67.52% | Val Acc: 92.22% | Test Acc: 88.44%
+Epoch [15/30] LR: 0.000176 | Loss: 0.3563 | Train Acc: 58.48% | Val Acc: 92.67% | Test Acc: 90.89%
+Epoch [16/30] LR: 0.000159 | Loss: 0.3803 | Train Acc: 54.33% | Val Acc: 91.78% | Test Acc: 93.33%
+Epoch [17/30] LR: 0.000142 | Loss: 0.3306 | Train Acc: 59.14% | Val Acc: 92.22% | Test Acc: 93.56%
+Epoch [18/30] LR: 0.000125 | Loss: 0.3368 | Train Acc: 59.14% | Val Acc: 93.78% | Test Acc: 93.11% ★SAVED
+Epoch [19/30] LR: 0.000108 | Loss: 0.3112 | Train Acc: 61.52% | Val Acc: 92.89% | Test Acc: 94.00%
+Epoch [20/30] LR: 0.000091 | Loss: 0.3060 | Train Acc: 64.38% | Val Acc: 93.56% | Test Acc: 94.22%
+Epoch [21/30] LR: 0.000076 | Loss: 0.3192 | Train Acc: 56.71% | Val Acc: 94.89% | Test Acc: 94.44% ★SAVED
+Epoch [22/30] LR: 0.000061 | Loss: 0.3366 | Train Acc: 52.33% | Val Acc: 94.00% | Test Acc: 94.22%
+Epoch [23/30] LR: 0.000048 | Loss: 0.3198 | Train Acc: 61.71% | Val Acc: 94.22% | Test Acc: 94.22%
+Epoch [24/30] LR: 0.000036 | Loss: 0.3051 | Train Acc: 63.00% | Val Acc: 94.22% | Test Acc: 94.44%
+Epoch [25/30] LR: 0.000026 | Loss: 0.2968 | Train Acc: 58.29% | Val Acc: 94.89% | Test Acc: 94.22%
+Epoch [26/30] LR: 0.000017 | Loss: 0.3196 | Train Acc: 56.71% | Val Acc: 94.44% | Test Acc: 94.89%
+Epoch [27/30] LR: 0.000010 | Loss: 0.3045 | Train Acc: 59.14% | Val Acc: 95.11% | Test Acc: 94.67% ★SAVED
+Epoch [28/30] LR: 0.000005 | Loss: 0.2971 | Train Acc: 59.33% | Val Acc: 95.11% | Test Acc: 94.89%
+Epoch [29/30] LR: 0.000002 | Loss: 0.3058 | Train Acc: 63.62% | Val Acc: 95.33% | Test Acc: 94.89% ★SAVED
+Epoch [30/30] LR: 0.000001 | Loss: 0.3075 | Train Acc: 59.10% | Val Acc: 95.11% | Test Acc: 95.11%
+
+=================================================================
+  完成: resnet50
+  最佳 Val Acc: 95.33% @ Epoch 29
+  对应 Test Acc: 94.89%
+  最终 Test Acc (EMA): 95.11%
+  耗时: 591.9s (9.9min)
+=================================================================
+
+[混淆矩阵] 已保存: /workspace/confusion_resnet50.png
+
+[分类报告] resnet50
+              precision    recall  f1-score   support
+
+       Angry     0.9510    0.9067    0.9283       150
+         Sad     0.9671    0.9800    0.9735       150
+       happy     0.9355    0.9667    0.9508       150
+
+    accuracy                         0.9511       450
+   macro avg     0.9512    0.9511    0.9509       450
+weighted avg     0.9512    0.9511    0.9509       450
+
+[分析] Angry→happy: 10 | happy→Angry: 4 | 混淆合计: 14
+[模型] 初始化: densenet121 (Dropout=0.3)
+
+[模型] densenet121: 6.96M 参数
+
+=================================================================
+  V5.1 训练: densenet121 | 设备: cuda
+  输入: 384×384 | LabelSmooth=0.08
+  优化器: AdamW | CosineAnnealingLR | Dropout=0.3
+  EMA: 0.999 | MixUp α=0.15 p=0.4
+=================================================================
+Epoch [01/30] LR: 0.000100 | Loss: 0.7719 | Train Acc: 44.57% | Val Acc: 85.33% | Test Acc: 33.33% ★SAVED
+Epoch [02/30] LR: 0.000200 | Loss: 0.6203 | Train Acc: 50.29% | Val Acc: 87.11% | Test Acc: 34.89% ★SAVED
+Epoch [03/30] LR: 0.000300 | Loss: 0.6401 | Train Acc: 44.52% | Val Acc: 88.67% | Test Acc: 33.78% ★SAVED
+Epoch [04/30] LR: 0.000299 | Loss: 0.6008 | Train Acc: 48.14% | Val Acc: 84.89% | Test Acc: 33.33%
+Epoch [05/30] LR: 0.000296 | Loss: 0.5769 | Train Acc: 53.62% | Val Acc: 86.44% | Test Acc: 33.33%
+Epoch [06/30] LR: 0.000291 | Loss: 0.5291 | Train Acc: 49.76% | Val Acc: 90.44% | Test Acc: 45.33% ★SAVED
+Epoch [07/30] LR: 0.000284 | Loss: 0.5219 | Train Acc: 54.67% | Val Acc: 89.78% | Test Acc: 38.89%
+Epoch [08/30] LR: 0.000275 | Loss: 0.5006 | Train Acc: 57.86% | Val Acc: 86.22% | Test Acc: 60.67%
+Epoch [09/30] LR: 0.000265 | Loss: 0.4713 | Train Acc: 59.71% | Val Acc: 90.22% | Test Acc: 67.11%
+Epoch [10/30] LR: 0.000253 | Loss: 0.4810 | Train Acc: 60.33% | Val Acc: 89.56% | Test Acc: 80.44%
+Epoch [11/30] LR: 0.000240 | Loss: 0.4568 | Train Acc: 55.00% | Val Acc: 92.00% | Test Acc: 88.22% ★SAVED
+Epoch [12/30] LR: 0.000225 | Loss: 0.4408 | Train Acc: 63.05% | Val Acc: 92.89% | Test Acc: 88.44% ★SAVED
+Epoch [13/30] LR: 0.000210 | Loss: 0.4209 | Train Acc: 62.57% | Val Acc: 90.89% | Test Acc: 87.56%
+Epoch [14/30] LR: 0.000193 | Loss: 0.4314 | Train Acc: 50.33% | Val Acc: 93.33% | Test Acc: 89.11% ★SAVED
+Epoch [15/30] LR: 0.000176 | Loss: 0.3968 | Train Acc: 62.86% | Val Acc: 91.78% | Test Acc: 92.00%
+Epoch [16/30] LR: 0.000159 | Loss: 0.3844 | Train Acc: 59.24% | Val Acc: 92.00% | Test Acc: 92.44%
+Epoch [17/30] LR: 0.000142 | Loss: 0.4089 | Train Acc: 58.10% | Val Acc: 93.11% | Test Acc: 93.11%
+Epoch [18/30] LR: 0.000125 | Loss: 0.3718 | Train Acc: 64.29% | Val Acc: 94.00% | Test Acc: 94.44% ★SAVED
+Epoch [19/30] LR: 0.000108 | Loss: 0.3775 | Train Acc: 59.24% | Val Acc: 93.56% | Test Acc: 94.89%
+Epoch [20/30] LR: 0.000091 | Loss: 0.3575 | Train Acc: 58.00% | Val Acc: 95.11% | Test Acc: 94.44% ★SAVED
+Epoch [21/30] LR: 0.000076 | Loss: 0.3657 | Train Acc: 66.43% | Val Acc: 94.44% | Test Acc: 94.44%
+Epoch [22/30] LR: 0.000061 | Loss: 0.3527 | Train Acc: 59.52% | Val Acc: 95.11% | Test Acc: 95.33%
+Epoch [23/30] LR: 0.000048 | Loss: 0.3834 | Train Acc: 51.90% | Val Acc: 95.11% | Test Acc: 94.22%
+Epoch [24/30] LR: 0.000036 | Loss: 0.3282 | Train Acc: 58.05% | Val Acc: 95.11% | Test Acc: 94.44%
+Epoch [25/30] LR: 0.000026 | Loss: 0.3304 | Train Acc: 64.33% | Val Acc: 95.56% | Test Acc: 95.11% ★SAVED
+Epoch [26/30] LR: 0.000017 | Loss: 0.3237 | Train Acc: 60.71% | Val Acc: 95.33% | Test Acc: 95.56%
+Epoch [27/30] LR: 0.000010 | Loss: 0.3430 | Train Acc: 63.52% | Val Acc: 94.89% | Test Acc: 95.56%
+Epoch [28/30] LR: 0.000005 | Loss: 0.3198 | Train Acc: 58.81% | Val Acc: 95.11% | Test Acc: 95.11%
+Epoch [29/30] LR: 0.000002 | Loss: 0.3603 | Train Acc: 56.90% | Val Acc: 94.89% | Test Acc: 95.11%
+Epoch [30/30] LR: 0.000001 | Loss: 0.3308 | Train Acc: 56.62% | Val Acc: 94.89% | Test Acc: 94.67%
+
+=================================================================
+  完成: densenet121
+  最佳 Val Acc: 95.56% @ Epoch 25
+  对应 Test Acc: 95.11%
+  最终 Test Acc (EMA): 94.67%
+  耗时: 660.2s (11.0min)
+=================================================================
+
+[混淆矩阵] 已保存: /workspace/confusion_densenet121.png
+
+[分类报告] densenet121
+              precision    recall  f1-score   support
+
+       Angry     0.9324    0.9200    0.9262       150
+         Sad     0.9605    0.9733    0.9669       150
+       happy     0.9467    0.9467    0.9467       150
+
+    accuracy                         0.9467       450
+   macro avg     0.9465    0.9467    0.9466       450
+weighted avg     0.9465    0.9467    0.9466       450
+
+[分析] Angry→happy: 7 | happy→Angry: 7 | 混淆合计: 14
+[对比图] Test Acc 对比已保存: /workspace/model_comparison_test_acc.png
+
+=================================================================
+  V5.0 三模型对比汇总
+=================================================================
+Model                    Best Val  Best Test Final Test
+----------------------------------------------------
+  efficientnet_b3          95.78%     93.33%     95.11%
+  resnet50                 95.33%     94.89%     95.11%
+  densenet121              95.56%     95.11%     94.67%
+=================================================================
+
+[V5.0] 训练完成！

@@ -1,0 +1,5 @@
+# Store model checkpoints with Git LFS.
+results/models/*.pth filter=lfs diff=lfs merge=lfs -text
+
+# Keep Bash scripts usable on Linux and WSL.
+*.sh text eol=lf
